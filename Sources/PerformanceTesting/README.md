@@ -1,9 +1,6 @@
 PerformanceTesting
 ==================
 
-![Swift](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)
-[![Build Status](https://travis-ci.org/dn-m/PerformanceTesting.svg?branch=master)](https://travis-ci.org/dn-m/PerformanceTesting)
-
 **PerformanceTesting** provides tools for checking the [asymptotic complexity](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity) of algorithms and operations over data structures.
 
 For example, this is particularly useful for ensuring that an algorithm that you have written which should be perform in constant time (i.e., **O(1)**) isn't [accidentally quadratic](https://accidentallyquadratic.tumblr.com/) (i.e., **O(n<sup>2</sup>)**).
@@ -82,29 +79,4 @@ let benchmark = Benchmark.nonMutating(
 The `Scale` namespace offers default `testPoints` (`.tiny`, `.small`, `.medium`, `.large`) that are good for most tests.
 
 See `./Tests` for more example usage.
-
-Installation
-------------
-
-Include this package by adding the following line to your `Package.swift`'s `dependencies` section:
-
-    .package(url: "https://github.com/dn-m/PerformanceTesting", .branch("master"))
-
-Add `import PerformanceTesting` to the top of your test files, and you are good to go.
-
-Development
------------
-
-### Building
-
-Clone and build this project with:
-
-    git clone https://github.com/dn-m/PerformanceTesting && cd PerformanceTesting
-    swift build
-
-### Testing
-
-To run the tests that come with the library:
-
-    swift test
 
