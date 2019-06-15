@@ -1,0 +1,92 @@
+custom_categories:
+
+  - name: Utility
+    children: 
+    - Metatype
+    - Identifier
+    - RangeProtocol
+    - InvertibleEnum
+
+  - name: Abstract
+    children:
+    - Either
+    - IntervalRelation
+
+  - name: Pairs
+    children:
+    - Pair
+    - SymmetricPair
+    - SwappablePair
+    - Cross
+    - UnorderedPair
+    - OrderedPair
+
+  - name: Linear
+    children:
+      - Matrix
+      - LinkedList
+      - Stack  
+      - Queue
+      - SortedArray
+      - CircularArray
+
+  - name: Trees
+    children:
+      - Tree
+      - BinaryHeap
+      - BinarySearchTree
+      - AVLTree
+      - ReferenceTree
+      - ReferenceTreeProtocol
+
+  - name: Graphs
+    children:
+      - Graph
+      - WeightedGraph
+      - DirectedGraph
+      - WeightedDirectedGraph
+      - ReferenceGraph
+      - GraphProtocol
+      - WeightedGraphProtocol
+      - UnweightedGraphProtocol
+      - DirectedGraphProtocol
+      - UndirectedGraphProtocol
+      - WeightedDirectedGraphProtocol
+
+  - name: Dictionaries
+    children:
+      - DictionaryProtocol
+      - OrderedDictionary
+      - SortedDictionary
+      - Bimap
+
+  - name: Zip
+    children:
+      - Zip3Sequence
+      - ZipToLongest2Sequence
+      - ZipToLongest3Sequence
+      - zip(_:_:_:)
+      - zip(_:_:fill1:fill2:)
+      - zip(_:_:fill:)
+      - zip(_:_:_:fill1:fill2:fill3:)
+      - zip(_:_:_:fill:)
+
+  - name: ContiguousSegmentCollection
+    children:
+      - ContiguousSegmentCollection
+      - Measured
+      - Intervallic
+      - Fragmentable
+      - Totalizable
+      - IntervallicFragmentable
+
+  - name: Wrapping Protocols
+    children:
+      - NewType
+      - IntegerWrapping
+      - FloatWrapping
+      - DoubleWrapping
+      - SequenceWrapping
+      - CollectionWrapping
+      - SortedCollectionWrapping
+      - RandomAccessCollectionWrapping
