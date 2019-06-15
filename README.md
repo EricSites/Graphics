@@ -56,34 +56,42 @@ let package = Package(
 To use a given module in your own project, import the desired module:
 
 ```Swift
+import Math
 import Algebra
+import Geometry
 import Destructure
 import DataStructures
 import Algorithms
+import SVG
+import Path
+import Rendering
+import QuartzAdapter
+import GraphicsTesting
+import PerformanceTesting
 ```
 
 ### Development
 
 To contribute to the `Graphics` package, clone the `git` repository:
 
-```
+```sh
 git clone https://github.com/EricSites/Graphics && cd Graphics
 ```
 
 Build the package:
 
-```
+```sh
 swift build
 ```
 
 Run the tests:
 
-```
+```sh
 swift test
 ```
 
 If you use the Xcode IDE, use Swift Package Manager to generate an `.xcodeproj` file:
 
-```
+```sh
 swift package generate-xcodeproj
 ```
