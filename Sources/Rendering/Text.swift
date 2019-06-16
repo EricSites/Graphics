@@ -73,8 +73,8 @@ public struct Text {
     public var width: Double {
         #if os(iOS)
             let rect = value.size(
-                attributes: [
-                    NSFontAttributeName: UIFont(name: fontName, size: CGFloat(fontSize))!
+                withAttributes: [
+                    NSAttributedString.Key.font: UIFont(name: fontName, size: CGFloat(fontSize))!
                 ]
             )
             return Double(rect.width)
