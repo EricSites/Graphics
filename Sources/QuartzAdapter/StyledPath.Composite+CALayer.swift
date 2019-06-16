@@ -25,6 +25,8 @@ extension CALayer {
                 case .path(let renderedPath):
                     let layer = CAShapeLayer(renderedPath)
                     container.addSublayer(layer)
+                case .text:
+                    fatalError()
                 }
 
             case .branch(let group, let trees):

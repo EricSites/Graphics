@@ -292,8 +292,8 @@ extension Rational {
     // MARK: - Hashable
 
     /// Hash value.
-    public var hashValue: Int {
-        return floatValue.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(floatValue.hashValue)
     }
 }
 

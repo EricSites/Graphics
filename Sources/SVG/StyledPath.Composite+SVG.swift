@@ -37,6 +37,8 @@ extension Tree where Branch == Group, Leaf == Item {
                 switch leaf {
                 case .path(let renderedPath):
                     return renderedPath.path.axisAlignedBoundingBox
+                case .text:
+                    fatalError()
                 }
             }
             .nonEmptySum ?? .zero
@@ -66,6 +68,8 @@ extension Tree where Branch == Group, Leaf == Item {
                 switch leaf {
                 case .path(let renderedPath):
                     return renderedPath.path.axisAlignedBoundingBox
+                case .text:
+                    fatalError()
                 }
             }
             .nonEmptySum ?? .zero
@@ -79,6 +83,8 @@ extension Tree where Branch == Group, Leaf == Item {
                 return .path(renderedPath
                     .translated(by: -proportion * ref)
                     .scaled(by: proportion))
+            case .text:
+                fatalError()
             }
         }
 
@@ -105,6 +111,8 @@ extension Tree where Branch == Group, Leaf == Item {
                 switch leaf {
                 case .path(let renderedPath):
                     return renderedPath.path.axisAlignedBoundingBox
+                case .text:
+                    fatalError()
                 }
             }
             .nonEmptySum ?? .zero
@@ -118,6 +126,8 @@ extension Tree where Branch == Group, Leaf == Item {
                 return .path(renderedPath
                     .translated(by: -proportion * ref)
                     .scaled(by: proportion))
+            case .text:
+                fatalError()
             }
         }
 

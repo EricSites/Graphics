@@ -11,12 +11,14 @@ import Geometry
 public enum Item {
 
     case path(StyledPath)
-    //case text(Text)
+    case text(Text)
 
     public var frame: Rectangle {
         switch self {
         case .path(let path):
             return path.frame
+        case .text(let text):
+            return text.frame
         }
     }
 
@@ -24,6 +26,8 @@ public enum Item {
         switch self {
         case .path(let renderedPath):
             return .path(renderedPath.resizedToFitContents)
+        case .text:
+            fatalError()
         }
     }
 
@@ -31,6 +35,8 @@ public enum Item {
         switch self {
         case .path(let renderedPath):
             return .path(renderedPath.translated(by: point))
+        case .text:
+            fatalError()
         }
     }
 }

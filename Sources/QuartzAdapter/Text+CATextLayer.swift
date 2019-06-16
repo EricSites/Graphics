@@ -31,4 +31,17 @@ import Rendering
 //    }
 //}
 
+extension CATextLayer {
+    
+    public convenience init(_ text: Text) {
+        self.init()
+        frame = CGRect(text.frame)
+        string = text.value
+        font = text.font
+        fontSize = CGFloat(text.fontSize)
+        foregroundColor = text.color.cgColor
+        contentsScale = scale
+    }
+}
+
 #endif
