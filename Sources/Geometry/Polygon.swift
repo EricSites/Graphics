@@ -77,7 +77,8 @@ public struct Polygon: PolygonProtocol {
             }
 
             // Snip off tip, and proceed.
-            #warning("VertexCollection has no `removing(at:)`, refine")
+            // TODO: Look into this - VertexCollection has no `removing(at:)`, refine
+            // #warning("VertexCollection has no `removing(at:)`, refine")
             var v = vertices
             v.remove(at: index)
 
