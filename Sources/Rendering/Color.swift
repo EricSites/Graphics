@@ -6,10 +6,11 @@
 //
 //
 
+import Foundation
 import Math
 
 /// Structure representing a color.
-public struct Color {
+public struct Color: Codable {
 
     /// The red, green, blue, and alpha components of this Color`.
     public let components: Components
@@ -104,7 +105,7 @@ extension Color {
     // MARK: - Nested Types
 
     /// The red, green, blue, and alpha components of this Color` in the range [0,1].
-    public struct Components {
+    public struct Components: Codable {
         public let red: Double
         public let green: Double
         public let blue: Double
