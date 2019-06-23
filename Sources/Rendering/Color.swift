@@ -27,7 +27,7 @@ extension Color {
 
     /// Create a `Color` with the given `red`, `green`, `blue`, and `alpha` values in the range
     /// [0,255].
-    public init(red: Int, green: Int, blue: Int, alpha: Double = 1) {
+    public init(_ red: Int, _ green: Int, _ blue: Int, _ alpha: Double = 1) {
         self.init(
             red: Double(red) / 255,
             green: Double(green) / 255,
